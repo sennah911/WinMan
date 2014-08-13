@@ -45,6 +45,57 @@
 <p>I haven't decided weather or not I will make this open source and rely on donations.</p>
 
 <h3>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<p>There are a lot of different things you can do in WinMan, and it is also easy to extend the functionality. These are some of the already implemented features:</p>
+<em>The functions are notated as regexes, since there are multiple ways of running alot of the commands.</em>
+
+<p>
+<h6>In Normal Mode:</h6>
+
+    <ul>
+        <li>
+        Nudge <strong>[0-9]*+n[hjkl]</strong> Nudge the current window with <em>nh</em>, <em>nj</em>, <em>nk</em> or <em>nl</em>. If you want to nudge the window farther in one go, just apply a count before the command: <em>10nj</em>
+        </li>
+        <li>
+        Origin <strong>o[0-9]+[xy]</strong> Set either the x- or y-origin to a percentage (0-100). For example use <em>o0xo0y</em> to set the windows origin to the top corner or <em>o50y</em> to move it half way down the screen.
+        </li>
+        <li>
+        Push <strong>p[hjkl]</strong> Push the window all the way to the edges. <em>ph</em> will push it all the way to the left.
+        </li>
+        <li>
+        Center <strong>cc</strong> Center the current window on the screen with <em>cc</em>.
+        </li>
+        <li>
+        Grow/Shrink <strong>[0-9]*+[Ss][hjkl]</strong> Grow a window with S and shrink the window with s adn provide the direction you whant it to change size and supply a optional count. For examlple <em>Sl</em> will grow the window to the left, <em>5sh</em> will shrink the window on the left side five times.
+        </li>
+        <li>
+        Resize Width/Height <strong>r[0-9]+[wh]</strong> Instantly set the width or height to a percentage of the screen size. <em>r50h</em> will make the window half the screen height and <em>r100w</em> will make it fill the width of the screen.
+        </li>
+        <li>
+        Next/Previous window <strong>[0-9]*+[wb]</strong> <em>w</em> will focus the next window and <em>b</em> will fucus the previous window. <em>3w</em> is equivalent to <em>www</em>
+        </li>
+        <li>
+        Repeat <strong>.</strong> will repeat the last valid command.
+        </li>
+        <li>
+        Macros <strong>q[a-z]</strong> Record a macro to any lowercase letter register, <em>qa</em> will start a recording to register <em>a</em>. End the recording with <em>q</em>. Replay any macro with <strong>[0-9]*+@[a-z]</strong> for example, <em>@a</em> will run the macro in register <em>a</em>, and <em>10@a</em> will run it ten times.
+        </li>
+        <li>
+        Lots more... There are a lot of other commands in development such as close, minimize, maximize, split and alot more. More details soon.
+        </li>
+    </ul>
+    <h6>Command Mode</h6>
+
+    Command mode is working as of now, but the api will probably change so I'm holding off on the details as of now. But in a nutshell, it's a command line to communicate directly with the api through javascript.
+    
+    <h6>Configuration </h6>
+    <p>When the API is closer to done I will explain how to configure the app. Just like command mode though you will configure the app through javascript.</p>
+
+</p>
+
+
+<h3>
 <a name="donations" class="anchor" href="#donations"><span class="octicon octicon-link"></span></a>Donations</h3>
 
 <p>If you like the idea of WinMan, please consider donating a small amount of bitcoin and I will be forever grateful.</p>
