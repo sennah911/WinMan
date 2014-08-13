@@ -35,6 +35,14 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+strong {
+	color: #d0353d;
+}
+
+em {
+	color: #840a75;
+}
+
 ol, ul {
   list-style: none;
 }
